@@ -1,0 +1,14 @@
+[GLOBAL]
+pants_version = "2.23.0"
+backend_packages = ["pants.backend.python", "pants.backend.experimental.python"]
+
+[source]
+root_patterns = [
+    "/",
+    '/packages/projA',
+    '/packages/projA/src',
+    '/packages/projA/tests',
+]
+
+[python]
+interpreter_constraints = ['==3.11.*']
